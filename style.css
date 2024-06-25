@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* ##Primary */
+  --Very-Dark-Magenta: hsl(300, 43%, 22%);
+  --Soft-Pink: hsl(333, 80%, 67%);
+  /* ### Neutral */
+  --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+  --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+}
+@font-face {
+  font-family: "LeagueSparta";
+  src: url(Fonts/LeagueSpartan-VariableFont_wght.ttf);
+}
+
+body {
+  font-size: 15px;
+  font-family: "LeagueSparta";
+  background:
+    url(images/bg-pattern-top-mobile.svg) no-repeat,
+    url(images/bg-pattern-bottom-mobile.svg),
+    no-repeat;
+  background-color: var(--White);
+  margin: 20px;
+}
+header {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  line-height: 29px;
+  padding: 65px 0px 0px;
+  color: var(--Very-Dark-Magenta);
+}
+header p {
+  color: var(--Dark-Grayish-Magenta);
+  font-weight: 600;
+  line-height: 20px;
+  font-size: 1.1em;
+  margin: 20px 10px;
+}
+content {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+content ul {
+  display: flex;
+  flex-direction: column;
+}
+content ul li {
+  display: flex;
+  flex-direction: row;
+}
+content .box {
+  background-color: #f7f2f8;
+  border-radius: 10px;
+  margin: 7px 0px;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+content .box .img {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+content .box strong {
+  color: #4e3750;
+}
+.card {
+  background-color: #511f50;
+  border-radius: 15px;
+  margin: 0px 0px 20px;
+}
+.card img {
+  border-radius: 50%;
+  width: 45px;
+}
+.card .header {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding: 30px;
+}
+.card .header .info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.card .header .name {
+  color: white;
+  font-weight: 500;
+  display: flex;
+}
+.card .header .status {
+  color: #c96ca5;
+  font-weight: 500;
+}
+.card p {
+  font-size: 1em;
+  color: white;
+  padding: 0px 30px 35px;
+  line-height: 20px;
+}
